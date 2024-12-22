@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+<body>
+    <style>
+    .sign {
+    width: 73px;
+    height: 37px;
+    }
+    section{
+        width: 100%;
+        text-align: center;
+        background-color: rgba(189, 189, 189, 0.822);
+        margin-top:100px ;
+        color: white;
+        font-family: sans-serif;
+        padding: 100px;
+    }
+    section h1 {
+        font-family: "arial";
+        font-weight: bold;
+    }
+    section p{
+        width: 855px;
+    }
+    body{
+        background:linear-gradient(to right , rgb(130, 174, 216),rgb(0, 112, 224),rgb(255, 255, 255)) ;
+    }
+    @media (max-width:768px) {
+        section p{
+            width: 400px;
+        }
+        
+    }
+    @media (max-width:425px) {
+        section p{
+            width: 300px;
+            font-size: 15px;
+            margin-left: -40px;
+        }
+        section{
+            height: 364px;
+        }
+        
+    }
+    @media (max-width:320px) {
+        section p{
+            width: 281px;
+            height: 100px;
+            font-size: 13px;
+            margin-left: -77px;
+        }
+        section{
+            height: 364px;
+        }
+        
+    }
+    </style>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container">
+            <a class="navbar-brand  ext-light" href="/index.html">Berimbolo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse item" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link  ext-light" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ext-light " href="AllPRoducts.html">All Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active ext-light" href="./About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  ext-light" href="./Reviews.HTML">Reviews</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control mt-1 me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="h-25 w-25  btn btn-outline-primary" type="submit">Search</button>
+                </form>
+                <!-- Button trigger modal -->
+                <a href="/SignIn.Html">
+                <button type="button" class="sign btn btn-primary  my-2 ms-md-2"
+                    >
+                    sign in
+                </button>
+                </a>
+  
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title text-black" id="staticBackdropLabel">log in</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <input class="form-control" type="email" placeholder="Enter email">
+                                <input class="form-control" type="password" placeholder="enter password">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Log
+                                    in</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <h1>About us</h1>
+        <center>
+        <p>We believe distance shouldn't separate us from what we care about. That's why we're on a mission to keep people close to what's important. As a company, we're focused on helping our customers connect with the places, people and things that matter to them.</p>
+    </center>
+    </section>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

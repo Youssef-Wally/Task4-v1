@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+<style>
+    section div{
+        width: 250px;
+        height: 300px;
+        border: 1px solid gray;
+        border-radius: 10px;
+       
+
+    }
+    button{
+        width: 10px;
+        height: 9px;
+    }
+    p{
+        font-weight: bold;
+        text-align: center;
+    }
+    section{
+     display: flex;
+     justify-content: space-around;   
+    }
+    h1{
+        font-size: large;
+        text-align: center;
+    }
+    img{
+        width: 200px;
+    }
+    .sign {
+    width: 73px;
+    height: 37px;
+    }
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container">
+            <a class="navbar-brand  ext-light" href="./index.html">Berimbolo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse item" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link  ext-light" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ext-light active " href="AllPRoducts.html">All Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ext-light" href="./About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ext-light" href="./Reviews.HTML">Reviews</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control mt-1 me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="h-25 w-25  btn btn-outline-primary" type="submit">Search</button>
+                </form>
+                <!-- Button trigger modal -->
+                <a href="/SignIn.Html">
+                <button type="button" class="sign btn btn-primary  my-2 ms-md-2"
+                    >
+                    sign in
+                </button>
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title text-black" id="staticBackdropLabel">log in</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <input class="form-control" type="email" placeholder="Enter email">
+                                <input class="form-control" type="password" placeholder="enter password">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Log
+                                    in</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="row">
+    <div class="col-sm-6 col-md-2 mx-1">
+        <span class="badge text-bg-primary m-2">Best Sell</span>
+        <img src="./image/ring_battery_doorbell_satin_nickel_1500x1500.jpg" alt="">
+        <h1>Battery DoorBell</h1>
+        <p>59.99$</p>
+    </div>
+    <div class="col-sm-6 col-md-2 mx-1">
+        <span class="badge text-bg-primary m-2">Best Sell</span>
+        <img src="./image/variant-31968080494681.jpg" alt="">
+        <h1>Stick Up Cam</h1>
+        <p>54.99$</p>
+    </div>
+    <div class="col-sm-6 col-md-2 mx-1">
+        <span class="badge text-bg-primary m-2">Best Sell</span>
+        <img src="./image/ring_pantilt_indoor_cam_white_1500x1500.jpg" alt="">
+        <h1>Pan-Tilt Indoor Cam</h1>
+        <p>49.99$</p>
+    </div>
+    <div class="col-sm-6 col-md-2 mx-1">
+        <span class="badge text-bg-primary m-2">Best Sell</span>
+        <img src="./image/ring_battery_doorbell_satin_nickel_1500x1500.jpg" alt="">
+        <h1>Battery DoorBell</h1>
+        <p>59.99$</p>
+    </div>
+    </section>
+    <script src="./js/script.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
